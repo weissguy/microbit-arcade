@@ -30,7 +30,7 @@ Your joystick:bit controller is powered by a microbit processor. We want the pro
 Now that we have data from the joystick, we need to connect it to the MakeCode Arcade simulator. The simulator accepts input from your computer keyboard (Space, Enter, Up, Down, Left, Right), so we'll map values from serial to simulated keyboard events using a Python script.
 
 1. Open a Command Prompt by clicking on the Windows search bar and typing `cmd`.
-2. Navigate to the "microbit-arcade-main" folder. Instructions for this will vary based on your file structure, but most likely: `cd Desktop`
+2. Navigate to the "microbit-arcade-main" folder. Instructions for this will vary based on your file structure, but most likely: `cd Desktop/microbit-arcade-main`
 3. Run the following command to start reading serial data: `py serialreader.py`
     - You'll know the command worked if you see "Reading serial..." printed to the terminal.
 
