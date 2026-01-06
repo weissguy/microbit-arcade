@@ -1,11 +1,12 @@
 import time
 import threading
 import serial
+import serial.tools.list_ports
 from pynput.keyboard import Controller, Key
 
 
 # ---- Config ----
-PORT = "COM3"
+PORT = "COM3" if "COM3" in [p.device for p in serial.tools.list_ports.comports()] else "COM4"
 BAUD = 115200
 
 CENTER = 512
@@ -134,7 +135,7 @@ class ControllerApp:
 
     def run(self):
         try:
-            print('Reading serial...')
+            print(f'Reading serial on port {PORT}...')
             while not self.stop_event.is_set():
                 enabled = self.enabled
 
