@@ -1,6 +1,6 @@
 # MakeCode Arcade with Joystick:bit Controller
 
-For the YBM x MIT Workshop January 2026
+*In-class only*. For the YBM x MIT Workshop January 2026.
 
 ## Setup
 1. Ensure Python $\geq$ 3.9 (https://www.python.org/) is installed.
